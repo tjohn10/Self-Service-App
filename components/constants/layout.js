@@ -29,11 +29,11 @@ export const commonStyles = StyleSheet.create({
         marginRight: 10,
         marginTop: 15,
         marginBottom: 10,
-        paddingBottom: 10
+        paddingBottom: 5
     },
     listTitle:{
         color: "#292D32",
-        fontFamily: "DMSans_500Medium",
+        // fontFamily: "DMSans_500Medium",
         fontSize: 16,
         fontStyle: "normal",
         fontWeight: "700",

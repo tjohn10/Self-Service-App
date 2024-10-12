@@ -22,7 +22,7 @@ export default function BottomTabs(){
                     tabBarLabel: 'Services',
                     headerShown: false,
                     tabBarIcon: ({color}) => (
-                        <Ionicons name="albums-outline" color="#09893E" size={24}/>
+                        <Ionicons name="albums" color="#09893E" size={24}/>
                     )
                 }}
             />
