@@ -171,10 +171,10 @@ const styles = StyleSheet.create({
         marginLeft: 5,
     },
     nameText: {
-        fontWeight: '500',
+        fontWeight: '400',
         fontSize: 16,
         width: 100,
-        marginLeft: 5
+        marginTop: 5
     },
     supportCards: {
         width: (Dimensions.get('screen').width - 70) / 2,
