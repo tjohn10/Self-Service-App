@@ -53,10 +53,10 @@ export default function BottomTabs(){
                 name="More"
                 component={MoreStack}
                 options={{
-                    tabBarLabel: 'More',
+                    tabBarLabel: 'Support',
                     headerShown: false,
                     tabBarIcon: ({color}) => (
-                        <Ionicons name="ellipsis-horizontal" color="#09893E" size={24}/>
+                        <Ionicons name="chatbubble-ellipses" color="#09893E" size={24}/>
                     )
                 }}
             />

@@ -3,14 +3,15 @@ import {SafeAreaView, Text, StyleSheet, View, ScrollView, Dimensions, Image} fro
 import {Button, Card, Searchbar} from "react-native-paper";
 import ServicesTab from "../../navigation/ServicesTab";
 import abia from "../../../assets/abia-new.png";
+import {commonStyles} from "../../constants/layout";
 
 export default function AllServicesScreens(){
     const [searchQuery, setSearchQuery] = useState('')
     return(
-        <ScrollView style={styles.container}>
+        <ScrollView style={commonStyles.container}>
             <View style={{marginTop: 15}}>
                 <Searchbar
-                    style={styles.search}
+                    style={commonStyles.search}
                     placeholder="Search"
                     onChangeText={setSearchQuery}
                     value={searchQuery}
@@ -19,7 +20,7 @@ export default function AllServicesScreens(){
             <View style={{marginTop: 20, height: 400}}>
                 <ServicesTab />
             </View>
-            <Card style={[styles.menuCard, {backgroundColor: '#fff'}]}>
+            <Card style={[commonStyles.menuCard, {backgroundColor: '#fff'}]}>
                 <Card.Content>
                     <Card.Title title="My Wallets" />
                     <Text style={{marginLeft: 10}}>To get started, Kindly activate your Wallet</Text>
@@ -37,17 +38,5 @@ export default function AllServicesScreens(){
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff'
-    },
-    search:{
-        width: Dimensions.get('screen').width - 20,
-        marginLeft: 10,
-        marginRight: 10,
-        borderColor: '#09893E',
-        borderStyle: 'solid',
-        backgroundColor: '#fff',
-        borderWidth: 1
-    }
+
 })
